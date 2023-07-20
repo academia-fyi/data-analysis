@@ -1,12 +1,24 @@
-# Academia.fyi API
+# README
 
------
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-**Table of Contents**
+Things you may want to cover:
 
-- [Installation](#installation)
-- [License](#license)
+* Ruby version
 
-## License
+* System dependencies
 
-`academia-api` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
