@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-cd /academia.fyi/frontend
-npm install
+cd /academia.fyi
 
-cd /academia.fyi/backend
-pip install -r requirements.txt
+source /opt/conda/etc/profile.d/conda.sh
+conda env create -f .devcontainer/environment.yml
+conda activate academia-fyi
+
+sudo apt install -y libpq-dev

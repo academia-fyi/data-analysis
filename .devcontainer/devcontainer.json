@@ -1,87 +1,55 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-	"name": "academia.fyi",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "name": "academia.fyi",
+  "image": "quay.io/jupyter/datascience-notebook:2024-05-16",
 	"features": {
-		"ghcr.io/devcontainers/features/common-utils:2": {
-			"installZsh": true,
-			"configureZshAsDefaultShell": true,
-			"upgradePackages": true,
-			"username": "vscode",
-			"userUid": "automatic",
-			"userGid": "automatic"
-		},
-		"ghcr.io/devcontainers/features/git:1": {
-			"version": "os-provided"
-		},
-		"ghcr.io/devcontainers/features/github-cli:1": {
-			"installDirectlyFromGitHubRelease": true,
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/node:1": {
-			"version": "18.16"
-		},
-		"ghcr.io/devcontainers/features/python:1": {
-			"version": "3.11",
-			"installTools": true,
-		},
-		"ghcr.io/devcontainers-contrib/features/typescript:2": {
-			"version": "5.1",
-		},
-		"ghcr.io/devcontainers/features/docker-in-docker:1": {
-			"dockerDashComposeVersion": "v2",
-		},
-		"ghcr.io/devcontainers-contrib/features/hatch:2": {
-			"version": "1.7",
-		},
-		"ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
-		// "ghcr.io/devcontainers-contrib/features/btm:1": {},
-		"ghcr.io/devcontainers-contrib/features/prettier:1": {},
-		"ghcr.io/devcontainers-contrib/features/black:2": {
-			"version": "23.7",
-		},
-		"ghcr.io/devcontainers-contrib/features/mypy:2": {}
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "installOhMyZsh": false,
+      "configureZshAsDefaultShell": true,
+      "upgradePackages": true,
+      "username": "jovyan",
+      //! Jupyter sets the user's group to `users` with GID 100, so this needs to
+      //!   be something different to ensure that `common-utils` doesn't break
+      "userGid": "1000"
+    },
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers-contrib/features/act": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
 	},
-
-	"forwardPorts": [ 2364, 2365 ],
 
 	"postCreateCommand": "/academia.fyi/.devcontainer/bootstrap.sh",
 	"waitFor": "postCreateCommand",
-	"postAttachCommand": {
-		"Frontend": "cd frontend && npm run dev",
-		"Backend" : "cd backend  && hatch run academia"
-	},
 
-	"workspaceFolder": "/academia.fyi",
-	"workspaceMount": "source=${localWorkspaceFolder},target=/academia.fyi,type=bind,consistency=cached",
+  "workspaceFolder": "/academia.fyi",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/academia.fyi,type=bind,consistency=cached",
 
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"astro-build.astro-vscode",
-				"dbaumer.vscode-eslint",
-				"aaron-bond.better-comments",
-				"mikestead.dotenv",
-				"vscodevim.vim",
-				"redhat.vscode-yaml",
-				"cschleiden.vscode-github-actions",
-				"shardulm94.trailing-spaces",
-				"stkb.rewrap",
-				"EditorConfig.EditorConfig",
-				"bungcip.better-toml"
-			],
-			"settings": {
-				"python.defaultInterpreterPath": "/academia.fyi/backend/.hatch/academia-api/bin/python",
-				"python.linting.pycodestyleEnabled": false,
-				"python.linting.pydocstyleEnabled": false,
-				"python.linting.pylamaEnabled": false,
-				"python.linting.mypyEnabled": true,
-				"python.linting.enabled": true
-			}
-		}
-	},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "aaron-bond.better-comments",
+        "mikestead.dotenv",
+        "vscodevim.vim",
+        "redhat.vscode-yaml",
+        "cschleiden.vscode-github-actions",
+        "shardulm94.trailing-spaces",
+        "stkb.rewrap",
+        "EditorConfig.EditorConfig",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.black-formatter",
+        "tamasfe.even-better-toml",
+				"RapidAPI.vscode-rapidapi-client",
+      ],
+      "settings": {
+        "python.linting.pycodestyleEnabled": false,
+        "python.linting.pydocstyleEnabled": false,
+        "python.linting.pylamaEnabled": false,
+        "python.linting.mypyEnabled": true,
+        "python.linting.enabled": true
+      }
+    }
+  },
 
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+  "containerUser": "jovyan"
 }
