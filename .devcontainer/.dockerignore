@@ -1,0 +1,4 @@
+*
+!pyproject.toml
+!pixi.lock
+!src/academiafyi/*

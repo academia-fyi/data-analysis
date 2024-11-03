@@ -1,0 +1,18 @@
+# https://taskfile.dev
+version: '3'
+
+vars:
+  GIT_SHORT_SHA:
+    sh: echo "sha-$(git rev-parse --short=6 HEAD)"
+  DOCKER_IMAGE: "ghcr.io/academia-fyi/data-analysis:edge"
+  WORKDIR: "/workspaces/data-anaylsis"
+
+tasks:
+  "docker:build":
+    cmds:
+      - GIT_SHORT_SHA={{ .GIT_SHORT_SHA }} docker buildx bake --file .devcontainer/docker-bake.hcl
+
+  "devcontainer:setup":
+    dir: "{{ .WORKDIR }}"
+    cmds:
+      - ./.devcontainer/setup

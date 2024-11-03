@@ -1,0 +1,21 @@
+#!/bin/bash
+
+git config --global --add safe.directory /workspaces/data-analysis
+
+rm -rf ".pixi/*"
+sudo chown -R "$(whoami):" .pixi/
+eval "$(pixi shell-hook -s zsh -e dev)"
+eval "$(pixi shell-hook -s bash -e dev)"
+
+pixi install -a
+
+pixi exec pre-commit install -t pre-commit
+pixi exec pre-commit install -t commit-msg
+
+direnv allow
+academia-fyi --install-completion
+
+zsh <<EOZ
+direnv allow
+academia-fyi --install-completion
+EOZ

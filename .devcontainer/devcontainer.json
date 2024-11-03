@@ -1,6 +1,6 @@
 {
   "name": "academia.fyi",
-  "image": "quay.io/jupyter/datascience-notebook:2024-05-16",
+  "image": "ghcr.io/academia-fyi/data-analysis:edge",
 	"features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": true,
@@ -18,11 +18,12 @@
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
 	},
 
-	"postCreateCommand": "/academia.fyi/.devcontainer/bootstrap.sh",
+	"postCreateCommand": "task devcontainer:setup",
 	"waitFor": "postCreateCommand",
 
-  "workspaceFolder": "/academia.fyi",
-  "workspaceMount": "source=${localWorkspaceFolder},target=/academia.fyi,type=bind,consistency=cached",
+  "mounts": [
+    { "target": "${containerWorkspaceFolder}/.pixi", "type": "volume" },
+  ],
 
   "customizations": {
     "vscode": {
@@ -39,7 +40,8 @@
         "ms-toolsai.jupyter",
         "ms-python.black-formatter",
         "tamasfe.even-better-toml",
-				"RapidAPI.vscode-rapidapi-client",
+        "RapidAPI.vscode-rapidapi-client",
+        "mechatroner.rainbow-csv"
       ],
       "settings": {
         "python.linting.pycodestyleEnabled": false,

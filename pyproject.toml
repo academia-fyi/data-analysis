@@ -1,0 +1,101 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project]
+authors = [{name = "John Muchovej", email = "jmuchovej@users.noreply.github.com"}]
+description = "Demystifying Academia"
+name = "academiafyi"
+license = { text = "MIT" }
+keywords = [
+    "foundation models",
+    "large language models",
+    "theory of mind",
+]
+requires-python = ">=3.12"
+dynamic = ["version"]
+dependencies = []
+
+[project.scripts]
+academia-fyi = "academiafyi.commands:cli"
+
+[project.urls]
+"Homepage" = "https://academia.fyi/"
+"Source Code" = "https://github.com/academia-fyi/data-analysis"
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.rst"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/academiafyi"]
+
+[tool.hatch.version]
+path = "src/academiafyi/about.py"
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-aarch64", "linux-64", "osx-arm64", "osx-64"]
+
+[tool.pixi.pypi-dependencies]
+academiafyi = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.environments]
+dev = { features = [ "dev" ] }
+test = { features = [ "test" ] }
+
+#! It would be nice to split many of these out into an `analysis` environment, but `pixi-kernel` isn't able to leverage non-default environments [especially in Quarto]. :(
+[tool.pixi.dependencies]
+python = "3.12.*"
+r-base = "4.4.*"
+pandas = ">=2.2,<3"
+numpy = ">=2.1,<3"
+scipy = ">=1.14,<2"
+typer = ">=0.12.5,<0.13"
+altair = ">=5.4.1,<6"
+jinja2 = ">=3.1.4,<4"
+srsly = ">=2.4.8,<3"
+rich = ">=13.9.4,<14"
+polars = ">=1.12.0,<2"
+hydra-core = ">=1.3.2,<2"
+pydantic = ">=2.9.2,<3"
+jupyterlab = ">=4.3.0,<5"
+ipykernel = ">=6.29.5,<7"
+ipywidgets = ">=8.1.5,<9"
+pyarrow = ">=18.0.0,<19"
+pingouin = ">=0.5.5,<0.6"
+nbformat = ">=5.10.4,<6"
+pixi-kernel = ">=0.5.1,<0.6"
+papermill = ">=2.6.0,<3"
+openpyxl = ">=3.1.5,<4"
+tldextract = ">=5.1.2,<6"
+pyodbc = ">=5.2.0,<6"
+
+[tool.pixi.feature.dev.dependencies]
+mypy = ">=1.11.1,<2"
+python-lsp-server = ">=1.11.0,<2"
+jedi = ">=0.19.1,<0.20"
+ipython = ">=8.26.0,<9"
+ruff = ">=0.6.0,<0.7"
+ipdb = ">=0.13.13,<0.14"
+tmux = ">=3.4,<4"
+pre-commit = ">=3.8.0,<4"
+
+[tool.pixi.feature.dev.tasks]
+type-check = "mypy ./src/academiafyi"
+format = "ruff format ./src/academiafyi"
+lint = "ruff check ./src/academiafyi"
+
+[tool.pixi.feature.test.dependencies]
+pytest = ">=8.3.2,<9"
+
+[tool.pixi.feature.test.tasks]
+test = "pytest"
+
+[tool.mypy]
+python_version = "3.12"
+
+# Use the defaults from Ruff (which inherit from Black)
+[tool.ruff]
+target-version = "py312"
