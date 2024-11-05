@@ -18,6 +18,9 @@ apt-get install -y --no-install-recommends \
 
 apt-get clean
 rm -rf /var/lib/apt/lists/*
+
+echo "eval \"\$(pixi completion --shell bash)\"" | sudo tee -a /etc/bash.bashrc
+echo "eval \"\$(pixi completion --shell zsh )\"" | sudo tee -a /etc/zsh/zshrc
 EOF
 
 USER ${NB_UID}

@@ -5,7 +5,7 @@ vars:
   GIT_SHORT_SHA:
     sh: echo "sha-$(git rev-parse --short=6 HEAD)"
   DOCKER_IMAGE: "ghcr.io/academia-fyi/data-analysis:edge"
-  WORKDIR: "/workspaces/data-anaylsis"
+  WORKDIR: "/workspaces/data-analysis"
 
 tasks:
   "docker:build":
