@@ -48,6 +48,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-1.1.0-hb9d3cd8_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-bin-1.1.0-hb9d3cd8_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-python-1.1.0-py312h2ec8cdc_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bwidget-1.9.14-ha770c72_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-h4bc722e_7.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/c-ares-1.34.2-heb4867d_0.conda
@@ -375,6 +376,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-1.1.0-h86ecc28_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-bin-1.1.0-h86ecc28_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-python-1.1.0-py312h6f74592_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/bwidget-1.9.14-h8af1aa0_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h68df207_7.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/c-ares-1.34.2-ha64f414_0.conda
@@ -701,6 +703,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-1.1.0-h00291cd_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-bin-1.1.0-h00291cd_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-python-1.1.0-py312h5861a67_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/bwidget-1.9.14-h694c41f_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/bzip2-1.0.8-hfdf4475_7.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/c-ares-1.34.2-h32b1619_0.conda
@@ -1031,6 +1034,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-1.1.0-hd74edd7_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-bin-1.1.0-hd74edd7_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-python-1.1.0-py312hde4cb15_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bwidget-1.9.14-hce30654_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h99b78c6_7.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/c-ares-1.34.2-h7ab814d_0.conda
@@ -1371,6 +1375,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-1.1.0-hb9d3cd8_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-bin-1.1.0-hb9d3cd8_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-python-1.1.0-py312h2ec8cdc_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bwidget-1.9.14-ha770c72_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-h4bc722e_7.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/c-ares-1.34.2-heb4867d_0.conda
@@ -1734,6 +1739,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-1.1.0-h86ecc28_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-bin-1.1.0-h86ecc28_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-python-1.1.0-py312h6f74592_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/bwidget-1.9.14-h8af1aa0_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h68df207_7.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/c-ares-1.34.2-ha64f414_0.conda
@@ -2096,6 +2102,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-1.1.0-h00291cd_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-bin-1.1.0-h00291cd_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-python-1.1.0-py312h5861a67_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/bwidget-1.9.14-h694c41f_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/bzip2-1.0.8-hfdf4475_7.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/c-ares-1.34.2-h32b1619_0.conda
@@ -2462,6 +2469,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-1.1.0-hd74edd7_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-bin-1.1.0-hd74edd7_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-python-1.1.0-py312hde4cb15_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bwidget-1.9.14-hce30654_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h99b78c6_7.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/c-ares-1.34.2-h7ab814d_0.conda
@@ -2834,6 +2842,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-1.1.0-hb9d3cd8_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-bin-1.1.0-hb9d3cd8_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-python-1.1.0-py312h2ec8cdc_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bwidget-1.9.14-ha770c72_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-h4bc722e_7.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/c-ares-1.34.2-heb4867d_0.conda
@@ -3164,6 +3173,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-1.1.0-h86ecc28_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-bin-1.1.0-h86ecc28_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-python-1.1.0-py312h6f74592_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/bwidget-1.9.14-h8af1aa0_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h68df207_7.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/c-ares-1.34.2-ha64f414_0.conda
@@ -3493,6 +3503,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-1.1.0-h00291cd_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-bin-1.1.0-h00291cd_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-python-1.1.0-py312h5861a67_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/bwidget-1.9.14-h694c41f_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/bzip2-1.0.8-hfdf4475_7.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/c-ares-1.34.2-h32b1619_0.conda
@@ -3826,6 +3837,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-1.1.0-hd74edd7_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-bin-1.1.0-hd74edd7_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-python-1.1.0-py312hde4cb15_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bwidget-1.9.14-hce30654_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h99b78c6_7.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/c-ares-1.34.2-h7ab814d_0.conda
@@ -4187,7 +4199,7 @@ packages:
   name: academiafyi
   version: 0.1.0
   path: .
-  sha256: 2420f01b06f4dd32f696e2198cb53d8f8dd5bc67ea534fb3a5e2a1946612782d
+  sha256: 26ac69a9548dd273f1a8ed5d4d859ccbdad964ed6a97122682f26be925f0b218
   requires_python: '>=3.12'
   editable: true
 - kind: conda
@@ -6420,6 +6432,22 @@ packages:
   - pkg:pypi/brotli?source=hash-mapping
   size: 339360
   timestamp: 1725268143995
+- kind: conda
+  name: bs4
+  version: 4.12.3
+  build: hd8ed1ab_0
+  subdir: noarch
+  noarch: generic
+  url: https://conda.anaconda.org/conda-forge/noarch/bs4-4.12.3-hd8ed1ab_0.conda
+  sha256: c1651b55bd1450880ad1b03af481e626c333fed4eca3a315f8498da5156ae384
+  md5: a96cb59624c88eaf9939559b53a1f6cd
+  depends:
+  - beautifulsoup4 >=4.12.3,<4.12.4.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  size: 6829
+  timestamp: 1705564829062
 - kind: conda
   name: bwidget
   version: 1.9.14
